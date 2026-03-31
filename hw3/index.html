@@ -470,7 +470,8 @@
 				</table>
 			</div>
 			<p>The visual difference between jittered and random sampling is subtle in path traced Cornell Box scenes which is likely expected. The dominant source of noise in path tracing is variance from random light bounce directions and shadow rays, not necessarily pixel sampling patterns. Jittered sampling's main advantage is reducing aliasing from undersampling geometry edges and high-frequency detail, which is less apparent in diffuse scenes. In theory jittered sampling will be better in the worst case as random sampling can cluster multiple samples in the same region by chance. In scenes with fine detail or sharp boundaries, this coverage would produce more visible improvements. You can see a bit of this in the \(s=16\) scene around the ceiling box edges.</p>
-
+		<h2> AI Usage:</h2>
+			I used Claude to help debug implementation issues and explain concepts like the slab method for intersection throughout the assignment. The AI helped identify bugs and also helped me format Tex in the writeup.
 		</div>
 	</body>
 </html>
